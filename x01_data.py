@@ -5,7 +5,17 @@ Create a reliable method for storing and retrieving data for the game.
 """
 
 def read(square,board):
-  """
+  board = {'7': ' ' , '8': ' ' , '9': ' ' ,
+            '4': ' ' , '5': ' ' , '6': ' ' ,
+           '1': ' ' , '2': ' ' , '3': ' ' }
+
+
+
+
+
+"""
+  def read(square,board):
+
   This will do a lookup to find out what is in a particular square
   inputs: 
   list board : list of the squares in the board
@@ -17,11 +27,10 @@ def read(square,board):
   return:
   the str value corresponding to the content of the square being checked
   None if the square is empty
-  """
+
   return None
 
 def write(square,board,player):
-  """
   inputs:
   int square : the square you are checking for an X or an O
   list board : the complete game board stored as a list
@@ -33,8 +42,7 @@ def write(square,board,player):
   The function should update the contents of the gameboard if the square is
   empty.  If the square is not empty, it should not change the gameboard and
   should return the original, unchanged gameboard data
-  """
-  
+
   return None
 
 def mainRead():
@@ -49,9 +57,8 @@ def mainWrite():
   assert write(5,board,'O') == [ 'X',0,0,0,'O',0,0,0,0,0]
   #next command should not do anything because square #5 is already occupied by an 'O'
   assert write(5,board,'X') == [ 'X',0,0,0,'O',0,0,0,0,0]
- 
-  
   
 if __name__ == "__main__" :
   mainRead()
   mainWrite()
+"""
